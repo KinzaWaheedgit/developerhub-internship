@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeHub - Home</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <div class="top-mini-bar">
+        <div class="container mini-flex">
+            <span>Welcome to our Alibaba-Style Marketplace!</span>
+            <div class="mini-links">
+                <span>Ship to <img src="assets/icons/dropdown-icon.svg" class="mini-arrow" alt=""></span>
+                <span>USD ($)</span>
+            </div>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="container header-main-row">
+            <div class="brand-logo" onclick="location.href='index.html'" style="cursor: pointer;">
+                <div class="logo-box"><img src="assets/icons/logo.svg" alt="Logo"></div>
+                <h2>TradeHub</h2>
+            </div>
+
+            <div class="search-container">
+                <div class="search-dropdown">All Products</div>
+                <input type="text" id="headerSearch" placeholder="Search premium products here...">
+                <button class="search-submit"><img src="assets/icons/search.svg" alt="Search"></button>
+                <div class="search-results-preview" id="searchPreview">
+                    <p>Suggested: Wireless Headsets Pro</p>
+                    <p>Suggested: Smartwatches Series 8</p>
+                </div>
+            </div>
+
+            <div class="header-widgets">
+                <div class="widget">
+                    <img src="assets/icons/user.svg" class="header-icon" alt="User">
+                    <div class="widget-txt"><span class="sub">Sign In</span><span class="main">My Account</span></div>
+                </div>
+                <div class="widget">
+                    <img src="assets/icons/Cart.svg" class="header-icon spec-cart" alt="Cart">
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav-bar">
+            <div class="container nav-flex">
+                <a href="index.html" class="active">Home</a>
+                <a href="listing.html">Ready to Ship</a>
+                <a href="#">Trade Shows</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="container hero-flex">
+                <div class="hero-text">
+                    <span class="promo-badge">Global Sourcing</span>
+                    <h1>Connect Directly with Verified Manufacturers</h1>
+                    <p>Get bulk-pricing on top quality merchandise. Verified supplier networks and safe payment trade assurances.</p>
+                    <div class="hero-buttons">
+                        <a href="listing.html" class="btn-primary">Source Now</a>
+                    </div>
+                </div>
+                <div class="hero-image-placeholder">
+                    <div class="banner-box">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&auto=format&fit=crop&q=80" alt="Banner">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 class="section-title">Featured Categories</h2>
+            <div class="categories-grid">
+                <div class="category-card" onclick="location.href='listing.html'">
+                    <h3>Electronics & Gadgets</h3>
+                    <span class="cat-link">Explore &rarr;</span>
+                </div>
+                <div class="category-card" onclick="location.href='listing.html'">
+                    <h3>Apparel & Textiles</h3>
+                    <span class="cat-link">Explore &rarr;</span>
+                </div>
+                <div class="category-card" onclick="location.href='listing.html'">
+                    <h3>Home & Decor</h3>
+                    <span class="cat-link">Explore &rarr;</span>
+                </div>
+                <div class="category-card" onclick="location.href='listing.html'">
+                    <h3>Beauty Ecosystem</h3>
+                    <span class="cat-link">Explore &rarr;</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 class="section-title">Recommended Products</h2>
+            <div class="products-grid">
+                
+                <div class="product-card">
+                    <div class="product-img-box">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&auto=format&fit=crop&q=80" alt="Headphones">
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-title">Premium Wireless Bluetooth Headphones 5.3</h4>
+                        <p class="product-price">$24.99 <span>/ Piece</span></p>
+                        <p class="min-order">MOQ: 10 Pieces</p>
+                        <a href="product-details.html?pid=1" class="buy-now-btn">Buy Now</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img-box">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&auto=format&fit=crop&q=80" alt="Watch">
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-title">Smart Fitness Watch with Heart Monitor</h4>
+                        <p class="product-price">$18.50 <span>/ Piece</span></p>
+                        <p class="min-order">MOQ: 5 Pieces</p>
+                        <a href="product-details.html?pid=2" class="buy-now-btn">Buy Now</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img-box">
+                        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=300&auto=format&fit=crop&q=80" alt="Chair">
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-title">Nordic Minimalist Wooden Lounge Chair</h4>
+                        <p class="product-price">$45.00 <span>/ Piece</span></p>
+                        <p class="min-order">MOQ: 2 Pieces</p>
+                        <a href="product-details.html?pid=3" class="buy-now-btn">Buy Now</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img-box">
+                        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=300&auto=format&fit=crop&q=80" alt="Cosmetics Beauty Set">
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-title">Organic Essential Oils & Luxury Skincare Serum Set</h4>
+                        <p class="product-price">$12.30 <span>/ Set</span></p>
+                        <p class="min-order">MOQ: 20 Sets</p>
+                        <a href="product-details.html?pid=4" class="buy-now-btn">Buy Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="newsletter-bar">
+            <div class="container news-flex">
+                <div class="news-text"><h3>Subscribe to our Newsletter</h3><p>Get the latest updates on new products.</p></div>
+                <form class="news-form" onsubmit="event.preventDefault();"><input type="email" placeholder="Your email"><button type="submit">Subscribe</button></form>
+            </div>
+        </div>
+        <div class="container footer-links-grid">
+            <div class="footer-col"><h4>Customer Care</h4><ul><li><a href="#">Help Center</a></li><li><a href="#">Track Your Order</a></li></ul></div>
+            <div class="footer-col"><h4>About Us</h4><ul><li><a href="#">About BrandName</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
+            <div class="footer-col"><h4>Sell on Marketplace</h4><ul><li><a href="#">Seller Terms</a></li></ul></div>
+            <div class="footer-col">
+                <h4>Connect With Us</h4>
+                <div class="contact-info-row">
+                    <img src="assets/icons/phone.svg" class="contact-icon" alt="Phone Icon">
+                    <span class="contact-text">+1 (234) 567-890</span>
+                </div>
+                <div class="contact-info-row">
+                    <img src="assets/icons/email.svg" class="contact-icon" alt="Email Icon">
+                    <span class="contact-text">support@brandname.com</span>
+                </div>
+                <div class="social-icons-flex">
+                    <a href="#" class="social-circle"><img src="assets/icons/facebook.svg"></a>
+                    <a href="#" class="social-circle"><img src="assets/icons/twitter.svg"></a>
+                    <a href="#" class="social-circle"><img src="assets/icons/instagram.svg"></a>
+                    <a href="#" class="social-circle"><img src="assets/icons/linkedin.svg"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 BrandName. All rights reserved.</p></div>
+    </footer>
+
+    <script>
+        const input = document.getElementById('headerSearch');
+        const preview = document.getElementById('searchPreview');
+        if(input && preview) {
+            input.addEventListener('focus', () => preview.style.display = 'block');
+            input.addEventListener('blur', () => setTimeout(() => preview.style.display = 'none', 200));
+        }
+    </script>
+</body>
+</html>

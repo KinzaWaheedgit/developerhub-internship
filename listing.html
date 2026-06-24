@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-main-row">
+            <div class="brand-logo" onclick="location.href='index.html'" style="cursor:pointer;">
+                <div class="logo-box"><img src="assets/icons/logo.svg" alt=""></div>
+                <h2>TradeHub</h2>
+            </div>
+            <div class="menu-links">
+                <a href="index.html">Home</a>
+                <a href="listing.html" class="active">Ready to Ship</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="listing-wrapper container">
+        <aside class="sidebar-filters">
+            <div class="filter-section">
+                <h3>Subcategories</h3>
+                <ul>
+                    <li><a href="#" class="active">All Electronics</a></li>
+                    <li><a href="#">Audio Devices</a></li>
+                </ul>
+            </div>
+            <div class="filter-section">
+                <h3>Supplier Types</h3>
+                <label class="checkbox-container">Verified Manufacturer
+                    <input type="checkbox" checked><span class="checkmark"></span>
+                </label>
+            </div>
+        </aside>
+
+        <section class="listing-products-area">
+            <div class="products-grid listing-layout">
+                <div class="product-card" onclick="location.href='product-details.html'" style="cursor: pointer;">
+                    <div class="product-img-box"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&auto=format&fit=crop&q=80" alt=""></div>
+                    <div class="product-info">
+                        <h4 class="product-title">Premium Wireless Bluetooth Headphones 5.3</h4>
+                        <p class="product-price">$24.99</p>
+                        <button class="buy-now-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

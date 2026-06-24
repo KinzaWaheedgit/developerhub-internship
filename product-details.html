@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeHub - Product Details</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        .details-wrapper {
+            background: white;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            padding: 40px;
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 50px;
+        }
+        .main-preview-img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #f1f5f9;
+        }
+        .details-content h1 {
+            font-size: 26px;
+            color: #1e293b;
+            margin-bottom: 12px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        .rating-row {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+            font-size: 14px;
+            color: #64748b;
+        }
+        .stars { color: #f59e0b; }
+        .price-structure-box {
+            background-color: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            border-left: 4px solid #e64a19;
+        }
+        .price-tier {
+            font-size: 32px;
+            color: #e64a19;
+            font-weight: 800;
+        }
+        .moq-info {
+            font-size: 14px;
+            color: #334155;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+        .product-specs {
+            margin-bottom: 30px;
+            border-top: 1px dashed #e2e8f0;
+            padding-top: 20px;
+        }
+        .spec-item { display: flex; margin-bottom: 12px; font-size: 14px; }
+        .spec-label { width: 150px; color: #64748b; }
+        .spec-value { color: #1e293b; font-weight: 600; }
+        .action-area { display: flex; gap: 15px; }
+        .btn-order-now {
+            background-color: #e64a19;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 6px;
+            cursor: pointer;
+            flex: 1;
+        }
+        .btn-contact-supplier {
+            background-color: transparent;
+            color: #1e293b;
+            border: 2px solid #cbd5e1;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-mini-bar">
+        <div class="container mini-flex">
+            <span>Welcome to our Alibaba-Style Marketplace!</span>
+            <div class="mini-links">
+                <span>Ship to <img src="assets/icons/dropdown-icon.svg" class="mini-arrow" alt=""></span>
+                <span>USD ($)</span>
+            </div>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="container header-main-row">
+            <div class="brand-logo" onclick="location.href='index.html'" style="cursor: pointer;">
+                <div class="logo-box"><img src="assets/icons/logo.svg" alt="Logo"></div>
+                <h2>TradeHub</h2>
+            </div>
+            <div class="search-container">
+                <div class="search-dropdown">All Products</div>
+                <input type="text" placeholder="Search products...">
+                <button class="search-submit"><img src="assets/icons/search.svg" alt=""></button>
+            </div>
+            <div class="header-widgets">
+                <div class="widget"><img src="assets/icons/user.svg" alt=""><div class="widget-txt"><span class="sub">Sign In</span><span class="main">My Account</span></div></div>
+                <div class="widget"><img src="assets/icons/Cart.svg" alt=""></div>
+            </div>
+        </div>
+        <nav class="nav-bar">
+            <div class="container nav-flex">
+                <a href="index.html">Home</a>
+                <a href="listing.html" class="active">Ready to Ship</a>
+                <a href="#">Trade Shows</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="details-wrapper">
+            <div class="details-gallery">
+                <img id="productImage" src="" alt="Product Image" class="main-preview-img">
+            </div>
+
+            <div class="details-content">
+                <h1 id="productTitle">Loading Product Title...</h1>
+                
+                <div class="rating-row">
+                    <span class="stars">★★★★★ 4.9</span>
+                    <span id="productReviews">142 Reviews</span>
+                    <span>5000+ Orders Filled</span>
+                </div>
+
+                <div class="price-structure-box">
+                    <div class="price-tier" id="productPrice">$0.00</div>
+                    <p class="moq-info" id="productMOQ">Minimum Order Quantity (MOQ): 0</p>
+                </div>
+
+                <div class="product-specs">
+                    <div class="spec-item"><div class="spec-label">Category / Type</div><div class="spec-value" id="productCat">General Sourcing</div></div>
+                    <div class="spec-item"><div class="spec-label">Certification</div><div class="spec-value" id="productCert">Verified Supplier Quality Check</div></div>
+                    <div class="spec-item"><div class="spec-label">Lead Time</div><div class="spec-value">Ships within 7-15 days globally</div></div>
+                </div>
+
+                <div class="action-area">
+                    <button class="btn-order-now" onclick="alert('Proceeding to Order Checkout!')">Start Order</button>
+                    <button class="btn-contact-supplier">Contact Supplier</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="newsletter-bar">
+            <div class="container news-flex">
+                <div class="news-text"><h3>Subscribe to our Newsletter</h3><p>Get the latest updates on new products.</p></div>
+                <form class="news-form" onsubmit="event.preventDefault();"><input type="email" placeholder="Your email"><button type="submit">Subscribe</button></form>
+            </div>
+        </div>
+        <div class="container footer-links-grid">
+            <div class="footer-col"><h4>Customer Care</h4><ul><li><a href="#">Help Center</a></li><li><a href="#">Track Your Order</a></li></ul></div>
+            <div class="footer-col"><h4>About Us</h4><ul><li><a href="#">About BrandName</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
+            <div class="footer-col"><h4>Sell on Marketplace</h4><ul><li><a href="#">Seller Terms</a></li></ul></div>
+            <div class="footer-col">
+                <h4>Connect With Us</h4>
+                <div class="contact-info-row">
+                    <img src="assets/icons/phone.svg" class="contact-icon" alt="Phone">
+                    <span class="contact-text">+1 (234) 567-890</span>
+                </div>
+                <div class="contact-info-row">
+                    <img src="assets/icons/email.svg" class="contact-icon" alt="Email">
+                    <span class="contact-text">support@brandname.com</span>
+                </div>
+                <div class="social-icons-flex">
+                    <a href="#" class="social-circle"><img src="assets/icons/facebook.svg"></a>
+                    <a href="#" class="social-circle"><img src="assets/icons/twitter.svg"></a>
+                    <a href="#" class="social-circle"><img src="assets/icons/instagram.svg"></a>
+                    <a href="#" class="social-circle"><img src="assets/icons/linkedin.svg"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Central Repository Dataset
+        const productsData = {
+            1: {
+                title: "Premium Wireless Bluetooth Headphones 5.3",
+                img: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
+                price: "$24.99 <span>/ Piece</span>",
+                moq: "Minimum Order Quantity (MOQ): 10 Pieces",
+                cat: "Electronics & Audio Devices",
+                cert: "CE, RoHS Premium Certified Quality",
+                reviews: "98 Reviews"
+            },
+            2: {
+                title: "Smart Fitness Watch with Heart Monitor",
+                img: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&auto=format&fit=crop&q=80",
+                price: "$18.50 <span>/ Piece</span>",
+                moq: "Minimum Order Quantity (MOQ): 5 Pieces",
+                cat: "Wearable Gadgets & Smart Trackers",
+                cert: "IP68 Waterproof, FCC Approved Setup",
+                reviews: "210 Reviews"
+            },
+            3: {
+                title: "Nordic Minimalist Wooden Lounge Chair",
+                img: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600&auto=format&fit=crop&q=80",
+                price: "$45.00 <span>/ Piece</span>",
+                moq: "Minimum Order Quantity (MOQ): 2 Pieces",
+                cat: "Home Furniture & Premium Decor",
+                cert: "Eco-Friendly Sustainable Wood Timber",
+                reviews: "45 Reviews"
+            },
+            4: {
+                title: "Organic Essential Oils & Luxury Skincare Serum Set (Anti-Aging Formula)",
+                img: "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop&q=80",
+                price: "$12.30 <span>/ Set</span>",
+                moq: "Minimum Order Quantity (MOQ): 20 Sets",
+                cat: "Cosmetics Pure Extract & Luxury Skincare",
+                cert: "GMP, MSDS Certified Manufacturers",
+                reviews: "142 Reviews"
+            }
+        };
+
+        window.addEventListener('DOMContentLoaded', () => {
+            // Address bar se product ID read karna
+            const urlParams = new URLSearchParams(window.location.search);
+            const pid = urlParams.get('pid') || 4; // default set to cosmetics if anything goes blank
+
+            const product = productsData[pid] || productsData[4];
+
+            // Real-time injection based on chosen product card
+            document.getElementById('productImage').src = product.img;
+            document.getElementById('productTitle').innerText = product.title;
+            document.getElementById('productPrice').innerHTML = product.price;
+            document.getElementById('productMOQ').innerText = product.moq;
+            document.getElementById('productCat').innerText = product.cat;
+            document.getElementById('productCert').innerText = product.cert;
+            document.getElementById('productReviews').innerText = product.reviews;
+        });
+    </script>
+</body>
+</html>
